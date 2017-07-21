@@ -1,0 +1,13 @@
+.pt_useragent_parser .data-header .panel-heading {
+    height:60px;
+}
+.pt_useragent_parser .data-header .panel-heading .panel-title {
+	width: 450px;
+	float: left;
+	text-align: left;
+	height: 45px;
+	line-height: 45px;
+}
+.pt_useragent_parser .data-header .panel-heading .btn {
+	float: right;
+}

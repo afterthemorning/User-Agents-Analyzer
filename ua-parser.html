@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body class="pt_useragent_parser">
+
+<!-- Data Input -->
+<div class="panel panel-primary data-header">
+	<div class="panel-heading">
+		<h3 class="panel-title">Please input the user agent strings in the below area.</h3>
+		<button type="button" class="btn btn-info navbar-btn js-analyze-ueragent">Analyze</button>
+	</div>
+    <div class="panel-body">
+	     <textarea style="width: 100%;height:300px;" id="useragents"></textarea>
+    </div>
+</div>
+<!-- Data Input -->
+
+<!-- Data Result -->
+<div class="panel panel-success">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Analysis Report</div>
+
+  <!-- Table -->
+  <table class="table">
+    <thead>
+		<tr>
+			<th>#</th>
+			<th>Browser</th>
+			<th>Engine</th>
+			<th>OS</th>
+			<th>Device</th>
+		</tr>
+	</thead>
+    <tbody class="js-data-content">
+	</tbody>
+  </table>
+</div>
+<!-- Data Result -->
+
+<script id="userAgentsData" type="x-tmpl-mustache">
+	<tr>
+	 <th scope="row">{{row}}</th>
+	 <td>{{browser}}</td>
+	 <td>{{engine}}</td>
+	 <td>{{OS}}</td>
+	 <td>{{device}}</td>
+	</tr>
+</script>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/ua-parser.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mustache.min.js"></script>
+</html>
